@@ -18,18 +18,37 @@
 // const dimension = [width, height];
 // console.log(dimension);
 
-//FUNCTION DECLARATION
-function addValue(num1, num2) {
-  return num1 + num2;
-}
-const firstValue = addValue(10, 5);
-const secondValue = addValue(5, 5);
+// //FUNCTION DECLARATION
+// function addValue(num1, num2) {
+//   return num1 + num2;
+// }
+// const firstValue = addValue(10, 5);
+// const secondValue = addValue(5, 5);
 
-//like arrow function or declaration
-const addValue2 = function (num1, num2) {
-  return num1 + num2;
+// //like arrow function or declaration
+// const addValue2 = function (num1, num2) {
+//   return num1 + num2;
+// };
+// const thirdValue = addValue2(20, 30);
+
+// const numValue = [firstValue, secondValue, thirdValue];
+// console.log(numValue);
+
+//OBJECTS AND DOT NOTATION
+const person = {
+  name: "Seun",
+  lastName: "Oluwafemi",
+  age: 40,
+  education: false,
+  married: true,
+  siblings: ["Kemi", "Dami", "Bola", "Dotun"],
+  greeting() {
+    console.log("hello there am SEUN");
+  },
 };
-const thirdValue = addValue2(20, 30);
-
-const numValue = [firstValue, secondValue, thirdValue];
-console.log(numValue);
+//to access them use dot natation
+console.log(person.name);
+console.log(person.lastName);
+console.log(person.age);
+console.log(person.siblings[2]);
+person.greeting();
