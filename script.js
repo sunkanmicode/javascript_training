@@ -35,20 +35,33 @@
 // console.log(numValue);
 
 //OBJECTS AND DOT NOTATION
-const person = {
-  name: "Seun",
-  lastName: "Oluwafemi",
-  age: 40,
-  education: false,
-  married: true,
-  siblings: ["Kemi", "Dami", "Bola", "Dotun"],
-  greeting() {
-    console.log("hello there am SEUN");
-  },
-};
-//to access them use dot natation
-console.log(person.name);
-console.log(person.lastName);
-console.log(person.age);
-console.log(person.siblings[2]);
-person.greeting();
+// const person = {
+//   name: "Seun",
+//   lastName: "Oluwafemi",
+//   age: 40,
+//   education: false,
+//   married: true,
+//   siblings: ["Kemi", "Dami", "Bola", "Dotun"],
+//   greeting() {
+//     console.log("hello there am SEUN");
+//   },
+// };
+// //to access them use dot natation
+// console.log(person.name);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.siblings[2]);
+// person.greeting();
+
+const readMore = document.querySelector(".read-more");
+const showImage = document.querySelector(".showImage");
+const showText = document.querySelector(".moreText");
+
+readMore.addEventListener("click", () => {
+  showText.classList.toggle("show-more");
+  if (readMore.innerText === "Read More") {
+    readMore.innerText = "Read Less";
+  } else {
+    readMore.innerText = "Read More";
+  }
+});
