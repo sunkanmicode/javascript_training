@@ -1,0 +1,22 @@
+/* .showImage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+} */
+
+img {
+  width: 100px;
+}
+.moreText {
+  display: none;
+}
+.show-more {
+  display: block;
+}
+/* .showImage.show-more .moreText {
+  display: inline;
+} */
+.showImage .dot {
+  display: none;
+}
